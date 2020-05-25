@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class calculator {
+public class calculator implements CalculatorImp{
 
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
@@ -53,5 +53,15 @@ public class calculator {
     private static void cheng(int console1, int console2) {
         int col=console1*console2;
         System.out.println(col);
+    }
+
+    @Override
+    public void Input() {
+        System.out.println("Input one");
+    }
+
+    @Override
+    public void outPut() {
+        System.out.println("Output one");
     }
 }
